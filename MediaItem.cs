@@ -1,10 +1,14 @@
 using System;
+using System.Text.Json.Serialization;
 
 namespace MediaLibraryApp
 {
     /// <summary>
     /// Represents an abstract base class for all media types.
     /// </summary>
+    [JsonDerivedType(typeof(Book), typeDiscriminator: "Book")]
+    [JsonDerivedType(typeof(DVD), typeDiscriminator: "DVD")]
+    [JsonDerivedType(typeof(MusicAlbum), typeDiscriminator: "MusicAlbum")]
     public abstract class MediaItem : IBorrowable
     {
         private string _id;
@@ -44,6 +48,7 @@ namespace MediaLibraryApp
             }
         }
 
+        [JsonInclude]
         public bool IsBorrowed { get; private set; }
 
         protected MediaItem(string id, string title, int releaseYear)

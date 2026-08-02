@@ -1,6 +1,8 @@
 using System;
 using System.Collections.Generic;
+using System.IO;
 using System.Linq;
+using System.Text.Json;
 
 namespace MediaLibraryApp
 {
@@ -10,10 +12,34 @@ namespace MediaLibraryApp
     public class MediaLibrary
     {
         private List<MediaItem> _inventory;
+        private readonly string _filePath = "inventory.json";
 
         public MediaLibrary()
         {
             _inventory = new List<MediaItem>();
+        }
+
+        public void SaveToDisk()
+        {
+            var options = new JsonSerializerOptions { WriteIndented = true };
+            string jsonString = JsonSerializer.Serialize(_inventory, options);
+            File.WriteAllText(_filePath, jsonString);
+            Console.WriteLine("\n[System] Inventory successfully saved to disk.");
+        }
+
+        public bool LoadFromDisk()
+        {
+            if (File.Exists(_filePath))
+            {
+                string jsonString = File.ReadAllText(_filePath);
+                var loadedData = JsonSerializer.Deserialize<List<MediaItem>>(jsonString);
+                if (loadedData != null)
+                {
+                    _inventory = loadedData;
+                    return true;
+                }
+            }
+            return false;
         }
 
         public void AddMedia(MediaItem item)

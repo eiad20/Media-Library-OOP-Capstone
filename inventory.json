@@ -1,0 +1,146 @@
+[
+  {
+    "$type": "Book",
+    "Author": "Andy Weir",
+    "PageCount": 369,
+    "Id": "B001",
+    "Title": "The Martian",
+    "ReleaseYear": 2011,
+    "IsBorrowed": true
+  },
+  {
+    "$type": "Book",
+    "Author": "Jon Skeet",
+    "PageCount": 528,
+    "Id": "B002",
+    "Title": "C# in Depth",
+    "ReleaseYear": 2019,
+    "IsBorrowed": false
+  },
+  {
+    "$type": "Book",
+    "Author": "Andrew Hunt, David Thomas",
+    "PageCount": 352,
+    "Id": "B003",
+    "Title": "The Pragmatic Programmer",
+    "ReleaseYear": 1999,
+    "IsBorrowed": false
+  },
+  {
+    "$type": "Book",
+    "Author": "Frank Herbert",
+    "PageCount": 412,
+    "Id": "B004",
+    "Title": "Dune",
+    "ReleaseYear": 1965,
+    "IsBorrowed": true
+  },
+  {
+    "$type": "Book",
+    "Author": "Robert C. Martin",
+    "PageCount": 464,
+    "Id": "B005",
+    "Title": "Clean Code",
+    "ReleaseYear": 2008,
+    "IsBorrowed": false
+  },
+  {
+    "$type": "DVD",
+    "Director": "Christopher Nolan",
+    "RunTimeMinutes": 148,
+    "Id": "D001",
+    "Title": "Inception",
+    "ReleaseYear": 2010,
+    "IsBorrowed": false
+  },
+  {
+    "$type": "DVD",
+    "Director": "Christopher Nolan",
+    "RunTimeMinutes": 169,
+    "Id": "D002",
+    "Title": "Interstellar",
+    "ReleaseYear": 2014,
+    "IsBorrowed": false
+  },
+  {
+    "$type": "DVD",
+    "Director": "The Wachowskis",
+    "RunTimeMinutes": 136,
+    "Id": "D003",
+    "Title": "The Matrix",
+    "ReleaseYear": 1999,
+    "IsBorrowed": false
+  },
+  {
+    "$type": "DVD",
+    "Director": "Peter Jackson",
+    "RunTimeMinutes": 201,
+    "Id": "D004",
+    "Title": "The Lord of the Rings: The Return of the King",
+    "ReleaseYear": 2003,
+    "IsBorrowed": false
+  },
+  {
+    "$type": "DVD",
+    "Director": "Denis Villeneuve",
+    "RunTimeMinutes": 163,
+    "Id": "D005",
+    "Title": "Blade Runner 2049",
+    "ReleaseYear": 2017,
+    "IsBorrowed": true
+  },
+  {
+    "$type": "MusicAlbum",
+    "Artist": "The Beatles",
+    "TrackCount": 17,
+    "Id": "M001",
+    "Title": "Abbey Road",
+    "ReleaseYear": 1969,
+    "IsBorrowed": false
+  },
+  {
+    "$type": "MusicAlbum",
+    "Artist": "Daft Punk",
+    "TrackCount": 13,
+    "Id": "M002",
+    "Title": "Random Access Memories",
+    "ReleaseYear": 2013,
+    "IsBorrowed": false
+  },
+  {
+    "$type": "MusicAlbum",
+    "Artist": "Pink Floyd",
+    "TrackCount": 10,
+    "Id": "M003",
+    "Title": "The Dark Side of the Moon",
+    "ReleaseYear": 1973,
+    "IsBorrowed": false
+  },
+  {
+    "$type": "MusicAlbum",
+    "Artist": "Kendrick Lamar",
+    "TrackCount": 16,
+    "Id": "M004",
+    "Title": "To Pimp a Butterfly",
+    "ReleaseYear": 2015,
+    "IsBorrowed": false
+  },
+  {
+    "$type": "MusicAlbum",
+    "Artist": "Radiohead",
+    "TrackCount": 12,
+    "Id": "M005",
+    "Title": "OK Computer",
+    "ReleaseYear": 1997,
+    "IsBorrowed": false
+  },
+  {
+    "$type": "MusicAlbum",
+    "Artist": "Hans Zimmer",
+    "TrackCount": 16,
+    "Id": "M006",
+    "Title": "Interstellar (Original Motion Picture Soundtrack)",
+    "ReleaseYear": 2014,
+    "IsBorrowed": true
+  }
+]
